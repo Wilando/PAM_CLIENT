@@ -12,4 +12,4 @@
 <h4>
 
 #Deskripsi Aplikasi<br>
-Sistem Arsip Surat adalah perangkat lunak yang berspesialisasi dalam<br> pengarsipan surat masuk dan surat keluar. Dalam aplikasi ini terdapat dua<br> menu yaitu surat masuk dan surat keluar. Dalam Surat masuk terdapat  beberapa fitur untuk melihat detail surat, mendownload surat, dilengkapi juga<br> dengan fitur pencarian serta filter surat berdasarkan tanggal dan tahun surat. Fitur ini juga tersedia pada surat keluar. 
+Sistem Arsip Surat adalah perangkat lunak yang berspesialisasi dalam<br> pengarsipan surat masuk dan surat keluar. Dalam aplikasi ini terdapat dua<br> menu yaitu surat masuk dan surat keluar. Dalam Surat masuk terdapat  beberapa fitur untuk melihat detail surat, mendownload surat, dilengkapi juga dengan fitur pencarian serta filter surat berdasarkan tanggal dan tahun surat. Fitur ini juga tersedia pada surat keluar. 
