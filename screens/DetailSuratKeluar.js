@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, TouchableOpacity, TextInput, Linking } from 'react-native';
 import { DataTable, Appbar, Searchbar, Card, Title, Paragraph, TouchableRipple, Button } from 'react-native-paper';
 // import ReactNativeBlobUtil from 'react-native-blob-util'
+import PDFReader from '@hashiprobr/expo-pdf-reader';
 import {Text, VStack, HStack } from "native-base";
 import suratServices from "../services/surat";
 
@@ -23,31 +24,6 @@ export default function DetailSuratMasuk({ navigation, route }) {
       })
 
   }, []);
-
-  // function extention(filename){
-  //   return (/[.]/.exec(filename)) ? /[^.]+$/.exec(filename) : undefined;
-  // }
-
-  // function download(file){
-  //   var date      = new Date();
-  //   var url       = `http://localhost:8000/arsip_surat/download_file_suratMasuk/${file}`;
-  //   var ext       = extention(url);
-  //   ext = "."+ext[0];
-  //   const { config, fs } = ReactNativeBlobUtil
-  //   let PictureDir = fs.dirs.PictureDir
-  //   let options = {
-  //     fileCache: true,
-  //     addAndroidDownloads : {
-  //       useDownloadManager : true,
-  //       notification : true,
-  //       path:  PictureDir + "/image_"+Math.floor(date.getTime() + date.getSeconds() / 2)+ext,
-  //       description : 'Image'
-  //     }
-  //   }
-  //   config(options).fetch('GET', url).then((res) => {
-  //     Alert.alert("Success Downloaded");
-  //   });
-  // }
 
   return (
     <>
@@ -94,6 +70,7 @@ export default function DetailSuratMasuk({ navigation, route }) {
           </Button>
         </Card.Actions>
       </Card>
+      <PDFReader  source={{ uri: `http://localhost:8000/arsip_surat/download_file_suratKeluar/${surat.file_pdf}` }} />
     </View>
     }
     </>
